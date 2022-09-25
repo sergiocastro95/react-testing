@@ -1,0 +1,20 @@
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px hsl(220deg 60% 50% / 0.333),
+    2px 4px 4px hsl(220deg 60% 50% / 0.333),
+    3px 6px 6px hsl(220deg 60% 50% / 0.333);
+}
+
+.todo-form > form {
+  display: flex;
+  flex-direction: column;
+}
+.todo-form label {
+  font-weight: bold;
+}
