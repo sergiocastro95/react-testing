@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-import Todo from "../domain/Todo";
 import { createTodo } from "../services/createTodo";
 import "../styles/components/TodoForm.css";
 import SubmitButton from "./buttons/SubmitButton";
