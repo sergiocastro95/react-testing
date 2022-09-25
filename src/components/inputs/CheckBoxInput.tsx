@@ -3,13 +3,13 @@ import "../../styles/components/inputs/CheckboxInput.css";
 interface ICheckBoxInput {
   label: string;
   id: string;
-  value: string;
+  name: string;
 }
 
-const CheckBoxInput = ({ label, id, value }: ICheckBoxInput): ReactElement => {
+const CheckBoxInput = ({ label, id, name }: ICheckBoxInput): ReactElement => {
   return (
     <div className="checkbox-input-container">
-      <input type="checkbox" id={id} value={value} />
+      <input type="checkbox" id={id} name={name} />
       <label htmlFor={id}>{label}</label>
     </div>
   );

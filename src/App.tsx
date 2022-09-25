@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 
 function App() {
   return (
@@ -10,7 +11,10 @@ function App() {
         <h1>Let's check your TODO list!</h1>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <TodoList />
+      <div className="general-container">
+        <TodoForm />
+        <TodoList />
+      </div>
     </div>
   );
 }

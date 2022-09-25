@@ -35,3 +35,11 @@
     transform: rotate(360deg);
   }
 }
+.general-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.general-container > * {
+  flex-grow: 1;
+}
