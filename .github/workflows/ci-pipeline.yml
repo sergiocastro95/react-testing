@@ -1,0 +1,13 @@
+name: Ci pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Echo a message
+        run:
+          echo "Hello Sergio"
