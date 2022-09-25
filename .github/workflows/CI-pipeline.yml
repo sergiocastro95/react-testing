@@ -36,3 +36,9 @@ jobs:
         run: npm run build
       - name: Integration tests
         run: npm run test:integration
+      - name: E2E tests
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run test:e2e-headless
+          start: npm run serve
+          wait-on: http://localhost:3000
