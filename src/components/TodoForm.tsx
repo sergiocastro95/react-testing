@@ -18,7 +18,7 @@ const TodoForm = (): ReactElement => {
   return (
     <div className="todo-form">
       <h2 className="todo-form-title">Insert new TODO</h2>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} data-id="add-todo-form">
         <TextInput id={"title"} label={"Title"} name={"title"} required />
         <CheckBoxInput
           label="Already completed?"
