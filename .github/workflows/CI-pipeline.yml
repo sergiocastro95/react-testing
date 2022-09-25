@@ -28,5 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Install dependendencies
+        run: npm i
       - name: Lint
         run: npm run eslint
