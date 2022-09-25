@@ -1,3 +1,5 @@
+[![CI pipeline](https://github.com/sergiocastro95/react-testing/actions/workflows/CI-pipeline.yml/badge.svg)](https://github.com/sergiocastro95/react-testing/actions/workflows/CI-pipeline.yml)
+
 # React testing
 The goal of this repo is to have a simple app tested using [Cypress](https://www.cypress.io/) for e2e tests and [React Testing Library](https://testing-library.com/) for component testing.
 Even since Cypress 10 is possible to do component testing, it is still in beta and with this repo I want to show how React Testing Library works because currently is the main choice for React developers.
