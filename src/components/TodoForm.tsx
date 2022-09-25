@@ -11,7 +11,6 @@ const TodoForm = (): ReactElement => {
     const formData = new FormData(e.currentTarget);
     const title = formData.get("title") as string;
     const completed = !!formData.get("completed");
-    console.log(completed);
     if (title) createTodo({ title, completed });
   };
   return (

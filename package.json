@@ -23,7 +23,8 @@
     "test:e2e": "cypress open",
     "eject": "react-scripts eject",
     "eslint": "eslint src/**/*.{ts,tsx}",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "test:e2e-headless": "cypress run"
   },
   "eslintConfig": {
     "extends": [
