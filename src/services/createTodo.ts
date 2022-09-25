@@ -1,7 +1,7 @@
 import Todo from "../domain/Todo";
 import randomIntFromInterval from "../utils/getRandomInt";
 
-const createTodo = async ({title, completed}: {title: string, completed:boolean}): Promise<boolean> => {
+export const createTodo = async ({title, completed}: {title: string, completed:boolean}): Promise<boolean> => {
   return new Promise((res, rej) => {
     try{
         const item = localStorage.getItem('todo-list');
@@ -9,11 +9,9 @@ const createTodo = async ({title, completed}: {title: string, completed:boolean}
         todoList.push({title, completed, userId:123, id:randomIntFromInterval(1,1000)});
         localStorage.setItem('todo-list', JSON.stringify(todoList));
         res(true);
-        alert('te')
     }catch (e) {
         res(false);
     }
   });
 };
 
-export default createTodo;
