@@ -32,3 +32,7 @@ jobs:
         run: npm i
       - name: Lint
         run: npm run eslint
+      - name: Build
+        run: npm run build
+      - name: Integration tests
+        run: npm run test:integration
